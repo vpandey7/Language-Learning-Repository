@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC “-//W3C XHTML 1.0 Transitional//EN” 
+“DTD/xhtml1- transitional.dtd”> 
+<html>
+<head>
+
+
+<script type = "text/javascript">
+	
+	// using objects and functions
+
+	function person(name,age,height){
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.yearsUntileRetire = yearsLefttoRetirement;
+	}
+
+	function yearsLefttoRetirement(){
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+
+	var person1 = new person("Vishal" , 29 , 5.9);
+	var person2 = new person("Nidhi" , 28 , 5.7);
+
+</script>
+</head>
+
+
+<body>
+
+<script type = "text/javascript">
+
+	document.write("The name of person 1 is " + person1.name + " and the age is " + person1.age);
+	document.write("<br>");
+	document.write("The name of person 2 is " + person2.name + " and the age is " + person2.age);
+	document.write("<br>");
+	document.write("Years left for retirement for "+ person2.name + " is "  + person2.yearsUntileRetire());
+	document.write("<br>");
+	document.write("Years left for retirement for "+ person1.name + " is "  + person1.yearsUntileRetire());
+
+
+
+
+
+
+</script>	
+</body>
+
+
+	
+
+
+
+</html>
+
