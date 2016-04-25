@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+	<form method="get" action="xmlServletPath">
+		User Name: <input name="userName" />
+		Full Name: <input name="fullName" />
+		<br>
+		Profession:
+		<input type="radio" name="prof" value="Developer">Developer
+		<input type="radio" name="prof" value="Architect">Architect
+		
+		<b>Location:</b><select name="location" multiple size=5 >
+		<option value="USA">USA</option>
+		<option value="India">India</option>
+		<option value="UK">UK</option>
+		<option value="France">France</option>
+		<option value="Germany">Germany</option>
+		</select>
+		<input type="submit" value="Enter" />
+	</form>
+</body>
+</html>
